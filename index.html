@@ -1,0 +1,502 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c68b92c119.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>BakeryTown</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <a class="nav__item" href="#About">О нас</a>
+        <a class="nav__item" href="#Novinki">Главная</a>
+        <a class="nav__item" href="#Order">Доставка и оплата</a>
+        <a class="nav__item" href="#Goods">Все товары</a>
+        <a class="nav__item" href="#">Оставить отзыв</a>
+        <button class="btn-avatar" easy-toggle="#modalWin" easy-class="show"><img class="nav__item-avatar" src="./img/icons/avatar.png" alt=""></button>
+
+        <!-- MODAL AVATAR -->
+
+        <div id="modalWin" class="modal">
+            <div class="modal-window">
+                <div class="avatar-container">
+                    <div class="avatar-item">Username</div>
+                    <div class="avatar-item">Password</div>
+                    <div class="avatar-container2">
+                        <div class="avatar-container4">
+                            <div class="avatar-container3">
+                                <img class="avatar-mark" src="./img/icons/mark.png" alt="">
+                                <div class="avatar-text">Запомнить меня</div>
+                            </div>
+                            <div class="avatar-text">Забыли свой пароль?</div>
+                        </div>
+                        <img class="avatar-reg" src="./img/photos/registr.png" alt="">
+                    </div>
+                </div>
+                <img class="cancel-btn" src="./img/icons/cancel.png" alt="" easy-remove="#modalWin" easy-class="show">
+            </div>
+            <div class="overlay" easy-remove="#modalWin" easy-class="show"></div>
+        </div>
+
+        <a class="nav__item-arrow-top" href="#"><img src="./img/icons/arrow-top.png" alt=""></a>
+    </header>
+
+    <!-- ABOUT -->
+
+    <main>
+        <div class="about">
+            <img class="header__logo" src="./img/photos/header_logo.png" alt="">
+            <div class="header__text-container">
+                <div class="header-text">Доставка выпечки по всему Владивостоку</div>
+                <p class="header-text-down">8(800)320-00-00</p>
+            </div>
+            <img easy-toggle="#modalWin1" easy-class="show" class="header__buy" src="./img/photos/buy.png" alt="">
+
+                <!-- MODAL CART -->
+
+                <div id="modalWin1" class="modal-cart">
+                    <div class="modal-cart-window">
+                        <div class="cart-container">
+                            <div class="cart-item">
+                                <img class="cart-img" src="./img/photos/cart.png" alt="">
+                                <div class="cart-checkboxes">
+                                    <div class="cart-checkbox-item">
+                                        <div class="cart-title">Телефон</div>
+                                        <div class="cart-checkbox">+7</div>
+                                    </div>
+                                    <div class="cart-checkbox-item">
+                                        <div class="cart-title">Имя</div>
+                                        <div class="cart-checkbox">ᅠ</div>
+                                    </div>
+                                    <div class="cart-checkbox-item">
+                                        <div class="cart-title">Адрес доставки</div>
+                                        <div class="cart-checkbox">ᅠ</div>
+                                    </div>
+                                </div>
+                                <div class="cart-choose">Cпособ оплаты:</div>
+                                <div class="cart-choose-item">
+                                    <div class="cart-circle"><i class="fa-solid fa-circle"></i></div>
+                                    <div class="cart-choose-text">Наличными</div>
+                                </div>
+                                <div class="cart-choose-item">
+                                    <div class="cart-circle"><i class="fa-solid fa-circle"></i></div>
+                                    <div class="cart-choose-text">Картой при получении</div>
+                                </div>
+                                <div class="cart-choose-item">
+                                    <div class="cart-circle" style="color: white;"><i class="fa-solid fa-circle"></i></div>
+                                    <div class="cart-choose-text">Картой через Интернет</div>
+                                </div>
+                                <div class="cart-total">ИТОГО:</div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="cart-data-container">
+                                    <div class="cart-data-item">
+                                        <div class="cart-pict">[пичка]</div>
+                                        <div class="cart-price">ᅠᅠруб</div>
+                                        <div class="cart-marks">
+                                            <div class="cart-minus">-ᅠᅠ</div>
+                                            <div class="cart-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-data-item">
+                                        <div class="cart-pict">[пичка]</div>
+                                        <div class="cart-price">ᅠᅠруб</div>
+                                        <div class="cart-marks">
+                                            <div class="cart-minus">-ᅠᅠ</div>
+                                            <div class="cart-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-data-item">
+                                        <div class="cart-pict">[пичка]</div>
+                                        <div class="cart-price">ᅠᅠруб</div>
+                                        <div class="cart-marks">
+                                            <div class="cart-minus">-ᅠᅠ</div>
+                                            <div class="cart-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-data-item">
+                                        <div class="cart-pict">[пичка]</div>
+                                        <div class="cart-price">ᅠᅠруб</div>
+                                        <div class="cart-marks">
+                                            <div class="cart-minus">-ᅠᅠ</div>
+                                            <div class="cart-plus">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-order">Заказать</div>
+                            </div>
+                        </div>
+                        <img class="cancel-btn" src="./img/icons/cancel.png" alt="" easy-remove="#modalWin1" easy-class="show">
+                    </div>
+                    <div class="overlay" easy-remove="#modalWin1" easy-class="show"></div>
+                </div>
+        </div>
+
+        <!-- SLIDER1 -->
+
+        <div id="Novinki" class="categories swiper">
+            <div class="slider-container">
+                <div class="slide-content">
+                    <div class="item-wrapper swiper-wrapper">
+                        <div class="slider-item swiper-slide">
+                            <div class="item-img">
+                                <a href="#Cakes"><img class="item-img__img" src="./img/photos/1.png" alt=""></a>
+                            </div>
+                            <div class="item-text">торты</div>
+                        </div>
+                        <div class="slider-item swiper-slide">
+                            <div class="item-img"><img class="item-img__img" src="./img/photos/2.png" alt=""></div>
+                            <div class="item-text">выпечка</div>
+                        </div>
+                        <div class="slider-item swiper-slide">
+                            <div class="item-img"><img class="item-img__img" src="./img/photos/3.png" alt=""></div>
+                            <div class="item-text">хлеб</div>
+                        </div>
+                        <div class="slider-item swiper-slide">
+                            <div class="item-img">
+                                <a href="#Deserti"><img class="item-img__img" src="./img/photos/4.png" alt=""></a>
+                            </div>
+                            <div class="item-text">десерты</div>
+                        </div>
+                        <div class="slider-item swiper-slide">
+                            <div class="item-img"><img class="item-img__img" src="./img/photos/5.png" alt=""></div>
+                            <div class="item-text">пироги</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"><img class="arrow-next" src="./img/icons/arrow.png" alt=""></div>
+            <div class="swiper-button-prev"><img src="./img/icons/arrow.png" alt=""></div>
+        </div>
+
+        <!-- SLIDER2 -->
+
+        <div class="news-title">Новинки</div>
+        <div class="news swiper">
+            <div class="slider-container">
+                <div class="slide-new-content">
+                    <div class="new-item-wrapper swiper-wrapper">
+                        <div class="slider-new-item swiper-slide">
+                            <div class="new-item-img"><img class="new-item-img__img" src="./img/photos/6.png" alt=""></div>
+                            <div class="new-item-text">булочка с корицей <mark>от 150 руб.</mark></div>
+                        </div>
+                        <div class="slider-new-item swiper-slide">
+                            <div class="new-item-img"><img class="new-item-img__img" src="./img/photos/7.png" alt=""></div>
+                            <div class="new-item-text">пончик с шоколадом <mark>от 200 руб.</mark></div>
+                        </div>
+                        <div class="slider-new-item swiper-slide">
+                            <div class="new-item-img"><img class="new-item-img__img" src="./img/photos/8.png" alt=""></div>
+                            <div class="new-item-text">хачапури лодочка <mark>от 250 руб.</mark></div>
+                        </div>
+                        <div class="slider-new-item swiper-slide">
+                            <div class="new-item-img"><img class="new-item-img__img" src="./img/photos/9.png" alt=""></div>
+                            <div class="new-item-text">торт красный бархат <mark>от 400 руб.</mark></div>
+                        </div>
+                        <div class="slider-new-item swiper-slide">
+                            <div class="new-item-img"><img class="new-item-img__img" src="./img/photos/10.png" alt=""></div>
+                            <div class="new-item-text">торт чизкейк <mark>от 260 руб.</mark></div>
+                        </div>
+                        <div class="slider-new-item swiper-slide">
+                            <div class="new-item-img"><img class="new-item-img__img" src="./img/photos/11.png" alt=""></div>
+                            <div class="new-item-text">тарт с бананом  <mark>от 290 руб.</mark></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next1"><img class="arrow-next" src="./img/icons/arrow.png" alt=""></div>
+            <div class="swiper-button-prev1"><img src="./img/icons/arrow.png" alt=""></div>
+        </div>
+        
+        <!-- ORDER -->
+
+        <div id="Order" class="order">
+            <div class="order-title">Изготавливаем торты на заказ
+                оставь заявку прямо сейчас</div>
+            <div class="order-rects" easy-toggle="#modalWin2" easy-class="show">
+                <div class="order-rect2"></div>
+                <div class="order-rect1">Оставить заявку</div>
+            </div>
+
+                    <!-- MODAL ORDER -->
+
+            <div id="modalWin2" class="modal-order">
+                <div class="modal-order-window">
+                    <div class="avatar-container">
+                        <div class="avatar-item">Ваше имя и фамилия</div>
+                        <div class="avatar-item">Номер телефона</div>
+                        <div class="order-container">
+                            <img class="order-phone" src="./img/icons/phone.png" alt="">
+                            <img class="order-send" src="./img/photos/modal2.png" alt="">
+                        </div>
+                    </div>
+                    <img class="cancel-btn" src="./img/icons/cancel.png" alt="" easy-remove="#modalWin2" easy-class="show">
+                </div>
+                <div class="overlay" easy-remove="#modalWin2" easy-class="show"></div>
+            </div>
+        </div>
+
+
+        <!-- CAKES -->
+
+        <div class="cakes">
+            <div id="Cakes" class="cakes-title">Популярные торты</div>
+            <div class="cakes-container">
+                <div class="cakes-item">
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/1.png" alt="">
+                        <div class="cake-title">торт белиссимо</div>
+                        <p class="cake-price">700 р.</p>
+                    </div>
+
+                    <!-- MODAL CAKES -->
+
+                    <div id="modalWin3" class="modal-cake">
+                        <div class="modal-cake-window">
+                            <div class="cart-container">
+                                <div class="cart-item">
+                                    <div class="cake-chosen-cake">[Пикча выбранного товара]</div>
+                                </div>
+                                <div class="cart-item">
+                                    <div class="cake-container">
+                                        <div class="cake-name">[Название товара]</div>
+                                        <div class="cake-text">Цена: [???]</div>
+                                        <div class="cake-text">Вес: [???]</div>
+                                        <div class="cake-text">Описание товара: [???]</div>
+                                    </div>
+                                    <img class="cake-order" src="./img/photos/order.png" alt="">
+                                </div>
+                            </div>
+                            <img class="cancel-btn" src="./img/icons/cancel.png" alt="" easy-remove="#modalWin3" easy-class="show">
+                        </div>
+                        <div class="overlay" easy-remove="#modalWin3" easy-class="show"></div>
+                    </div>
+
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/2.png" alt="">
+                        <div class="cake-title">торт блинный</div>
+                        <p class="cake-price">1050 р.</p>
+                    </div>
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/3.png" alt="">
+                        <div class="cake-title">торт карамельная маракуйя</div>
+                        <p class="cake-price">1050 р.</p>
+                    </div>
+                </div>
+                <div class="cakes-item">
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/4.png" alt="">
+                        <div class="cake-title">торт моцарт</div>
+                        <p class="cake-price">950 р.</p>
+                    </div>
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/5.png" alt="">
+                        <div class="cake-title">торт с печеньем</div>
+                        <p class="cake-price">830 р.</p>
+                    </div>
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/6.png" alt="">
+                        <div class="cake-title">торт шварцвальдские ворота</div>
+                        <p class="cake-price">1200 р.</p>
+                    </div>
+                </div>
+                <div class="cakes-item">
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/7.png" alt="">
+                        <div class="cake-title">торт захер</div>
+                        <p class="cake-price">800 р.</p>
+                    </div>
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/8.png" alt="">
+                        <div class="cake-title">торт с клубникой</div>
+                        <p class="cake-price">1250 р.</p>
+                    </div>
+                    <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                        <img class="cake-img" src="./img/cakes/9.png" alt="">
+                        <div class="cake-title">торт  матча с ягодами</div>
+                        <p class="cake-price">1400 р.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- DESERTI -->
+
+    <div id="Goods" class="cakes">
+        <div id="Deserti" class="cakes-title">Популярные десерты</div>
+        <div class="cakes-container">
+            <div class="cakes-item">
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/1.png" alt="">
+                    <div class="cake-title">безе анна павлова</div>
+                    <p class="cake-price">350 р.</p>
+                </div>
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/2.png" alt="">
+                    <div class="cake-title">тарталетка малиновая</div>
+                    <p class="cake-price">200 р.</p>
+                </div>
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/3.png" alt="">
+                    <div class="cake-title">пирожное фисташковое</div>
+                    <p class="cake-price">390 р.</p>
+                </div>
+            </div>
+            <div class="cakes-item">
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/4.png" alt="">
+                    <div class="cake-title">капкейк ореховый</div>
+                    <p class="cake-price">200 р.</p>
+                </div>
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/5.png" alt="">
+                    <div class="cake-title">капкейк ваниль и мята</div>
+                    <p class="cake-price">210 р.</p>
+                </div>
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/6.png" alt="">
+                    <div class="cake-title">капкейк пина-колада</div>
+                    <p class="cake-price">220 р.</p>
+                </div>
+            </div>
+            <div class="cakes-item">
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/7.png" alt="">
+                    <div class="cake-title">макарон черничный</div>
+                    <p class="cake-price">50 р.</p>
+                </div>
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/8.png" alt="">
+                    <div class="cake-title">макарон фисташковый</div>
+                    <p class="cake-price">50 р.</p>
+                </div>
+                <div class="cake" easy-toggle="#modalWin3" easy-class="show">
+                    <img class="cake-img" src="./img/deserti/9.png" alt="">
+                    <div class="cake-title">макарон лимонный с мятой</div>
+                    <p class="cake-price">50 р.</p>
+                </div>
+            </div>
+        </div>
+        <div class="cake-btn">Смотреть дальше</div>
+    </div>
+
+    <!-- COMMENTS -->
+
+    <div class="comments">
+        <div class="com-title">Отзывы покупателей</div>
+        <div class="com-container">
+            <div class="com-item">
+                <div class="com-name">Ковалева Олеся</div>
+                <div class="com-advangs">Достоинства: Очень вкусные тортики, кондитер - золотые ручки</div>
+                <div class="com-minus">Недостатки: Нет</div>
+                <div class="com-comment">Комментарий: Очень вкусный торт😄😄😄😄пропитанный, сладенький, ароматный.
+                    ПРОСТО ПАЛЬЧИКИ ОБЛИЖЕШЬ 💖 Всем советую</div>
+            </div>
+            <div class="com-item">
+                <div class="com-name">Косарева Екатерина</div>
+                <div class="com-text">
+                    <div class="com-advangs">Достоинства: Всегда берутся за работу любой сложности. Тортики божественны на вкус</div>
+                    <div class="com-minus">Недостатки: Нет</div>
+                    <div class="com-comment">Комментарий: Не в первый раз заказываю торт именно здесь и не в последний это
+                        точно 😉 Сделала подарок мужу на 30 лет. Муж был в восторге😍 Торт очень понравился, оригинальный,
+                        красивый, а главное очень вкусный. Спасибо вам большое, что в который раз приятно удивили и порадовали
+                        такой красотой ❤️</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- O_NAS -->
+
+    <div id="About" class="onas">
+        <div class="onas-container">
+            <div class="onas-item">
+                <img class="onas-star" src="./img/icons/star.png" alt="">
+                <div class="onas-text">Доставка по Владивостоку - 350р.
+                    Адрес для самовывоза - улица Адмирала Кузнецова, 66</div>
+            </div>
+            <div class="onas-item">
+                <img class="onas-star" src="./img/icons/star.png" alt="">
+                <div class="onas-text">Оплата тортов на заказ - Предоплата в размере 2000 ₽ на все виды тортов (кроме свадебных).
+                    Предоплата в размере 100% на остальные виды позиций.
+                    Наличный/безналичный расчет</div>
+            </div>
+            <div class="onas-item">
+                <img class="onas-star" src="./img/icons/star.png" alt="">
+                <div class="onas-text">Срок выполнения заказа - Торты, чизкейки, трайфлы - от 24 часов.
+                    Зефир и шоколад - день в день.
+                    Заказ тортов - за 1 неделю.
+                    Заказ свадебных тортов - за 2 недели.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAP -->
+
+    <div class="map">
+        <div class="map-text">Наш адрес:
+            улица Адмирала Кузнецова, 66</div>
+    </div>
+
+    <!-- MATERIALS -->
+
+    <div class="materials">
+        <div class="mat-container">
+            <div class="mat-item">
+                <p class="mat-title">Помощь</p>
+                <p class="mat-text">Оформление заказа</p>
+                <p class="mat-text">Доставка</p>
+                <p class="mat-text">Оплата</p>
+                <p class="mat-text">Корзина</p>
+                <p class="mat-text">Оставить отзыв</p>
+            </div>
+            <div class="mat-item">
+                <p class="mat-title">О нас</p>
+                <p class="mat-text">Обратная связь</p>
+                <p class="mat-text">Адрес</p>
+                <p class="mat-text">Мы в соц сетях:</p>
+                <div class="mat-icons">
+                    <div class="mat-icon"><i class="fa-brands fa-telegram"></i></div>
+                    <div class="mat-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="mat-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="mat-icon"><i class="fa-brands fa-vk"></i></div>
+                </div>
+            </div>
+            <div class="mat-item">
+                <p class="mat-title">ИП Блинова Елизавета Владимировна
+                    ИНН 000000000000</p>
+                <div class="mat-item__item">
+                    <img class="mat-item__item-icon" src="./img/icons/phone.png" alt="">
+                    <p class="mat-text">8(800)320-00-00 тел администратора</p>
+                </div>
+                <div class="mat-item__item">
+                    <img class="mat-item__item-icon" src="./img/icons/address.png" alt="">
+                    <p class="mat-text">Юридический адрес: 690037, ул. Адмирала Кузнецова, 66</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <img class="header__logo" src="./img/photos/header_logo.png" alt="">
+        <div class="footer__text-container">
+            <div class="footer-text">2022 © Все права защищены</div>
+            <p class="footer-text-down">Политика обработки персональных данных</p>
+        </div>
+    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
+</body>
+</html>
